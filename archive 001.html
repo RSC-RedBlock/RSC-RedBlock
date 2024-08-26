@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redblock</title>
+    <style>
+        body {
+            background-color: #000000; /* Fondo negro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #ff0000; /* Texto blanco para el contraste */
+        }
+
+        .header {
+            background-color: #7d0000; /* Rojo */
+            padding: 10px 20px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .header a {
+            color: #ff0000; /* Color rojo para el texto del enlace */
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #000000; /* Fondo negro */
+            border: 2px solid #000000; /* Borde negro */
+            border-radius: 5px; /* Bordes redondeados */
+            margin: 0 5px; /* Espacio entre los enlaces */
+        }
+
+        .header a:hover {
+            background-color: #ff0000; /* Fondo rojo al pasar el mouse */
+            color: #000000; /* Color del texto negro al pasar el mouse */
+        }
+
+        .navbar {
+            background-color: #dc0000; /* Rojo más oscuro */
+            padding: 0.001%;
+            display: flex;
+            justify-content: space-around;
+            color: #000000;
+        }
+
+        .content {
+            display: flex;
+            flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+            padding: 20px;
+            background-color: #000000; /* Fondo negro para el contenido principal */
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #1d1d1d; /* Gris muy oscuro para la barra lateral */
+            padding: 15px;
+            color: #ff0000; /* Blanco para el texto en la barra lateral */
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            width: 80%;
+            padding: 15px;
+            background-color: #161515; /* Fondo negro para el contenido principal */
+            color: #000000; /* Blanco para el texto en el contenido principal */
+            box-sizing: border-box;
+        }
+
+        .footer {
+            background-color: #2b2929; /* Gris oscuro */
+            padding: 10px;
+            text-align: center;
+            color: #000000; /* Blanco para el texto en el pie de página */
+        }
+
+        .button {
+            background-color: #8b0000; /* Rojo intermedio */
+            color: #000000; /* Blanco para el texto en el botón */
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #b40000; /* Rojo claro para hover */
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+        }
+
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .file-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .file-list li {
+            margin-bottom: 5px;
+        }
+
+        .file-list a {
+            color: #000000; /* Blanco para el texto en los enlaces de la lista de archivos */
+            text-decoration: none;
+            background-color: #ce0000; /* Rojo intermedio */
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .file-list a:hover {
+            background-color: #ff0000; /* Rojo claro para hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Redblock</h1>
+
+    </div>
+
+
+    </div>
+
+    <div class="navbar">
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2></h2>
+            <div class="file-list">
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2></h2>
+
+            <!-- Ejemplo de una noticia -->
+            <div class="news-item">
+                <h3>RSC Archives</h3>
+                <p>local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ 
+                    -- check if the ScreenGui already exists, if it does, destroy it and remove BillboardGuis
+                    if playerGui:FindFirstChild("TadachiisESP") then
+                        playerGui:FindFirstChild("TadachiisESP"):Destroy()
+                     
+                        for _, player in ipairs(game.Players:GetPlayers()) do
+                            local billboardGui = player.Character and player.Character:FindFirstChild("Head") and player.Character.Head:FindFirstChild("PlayerBillboardGui")
+                            if billboardGui then
+                                billboardGui:Destroy()
+                            end
+                        end
+                    end
+                     
+                    -- create ScreenGui
+                    local screenGui = Instance.new("ScreenGui")
+                    screenGui.Name = "TadachiisESP"
+                    screenGui.Parent = playerGui
+                    screenGui.DisplayOrder = 1
+                     
+                    -- create Frame
+                    local holder = Instance.new("Frame")
+                    holder.Name = "Holder"
+                    holder.Parent = screenGui
+                    holder.Size = UDim2.new(0, 200, 0, 100) -- size of the frame
+                    holder.Position = UDim2.new(0.5, -100, 0.5, -50) -- position of the frame at the center of the screen
+                    holder.BackgroundColor3 = Color3.new(1, 1, 1) -- white background
+                    holder.BackgroundTransparency = 0.5 -- semi-transparent
+                    holder.Draggable = true -- makes the frame draggable
+                    holder.Active = true
+                     
+                    -- create TextLabel
+                    local titleLabel = Instance.new("TextLabel")
+                    titleLabel.Name = "TitleLabel"
+                    titleLabel.Text = "Tadachii's ESP GUI"
+                    titleLabel.TextScaled = true
+                    titleLabel.Parent = holder
+                    titleLabel.Size = UDim2.new(1, 0, 0.5, 0) -- fills half of the frame
+                    titleLabel.BackgroundColor3 = Color3.new(1, 1, 1) -- white background
+                    titleLabel.TextColor3 = Color3.new(0, 0, 0) -- black text
+                    titleLabel.BackgroundTransparency = 0.5 -- semi-transparent
+                     
+                    -- create TextLabel for Status
+                    local statusLabel = Instance.new("TextLabel")
+                    statusLabel.Name = "StatusLabel"
+                    statusLabel.Text = ""
+                    statusLabel.Parent = holder
+                    statusLabel.Size = UDim2.new(1, 0, 0.25, 0) -- fills one-fourth of the frame below the TitleLabel
+                    statusLabel.Position = UDim2.new(0, 0, 0.5, 0) -- aligns the text label to the bottom of the frame
+                    statusLabel.BackgroundColor3 = Color3.new(1, 1, 1) -- white background
+                    statusLabel.TextColor3 = Color3.new(0, 0, 0) -- black text
+                    statusLabel.BackgroundTransparency = 0.5 -- semi-transparent
+                    statusLabel.TextScaled = true -- enable text scaling for the status label
+                     
+                    -- create TextButton for Status
+                    local statusButton = Instance.new("TextButton")
+                    statusButton.Name = "StatusButton"
+                    statusButton.Text = "Off"
+                    statusButton.Parent = holder
+                    statusButton.Size = UDim2.new(1, 0, 0.25, 0) -- fills one-fourth of the frame below the StatusLabel
+                    statusButton.Position = UDim2.new(0, 0, 0.75, 0) -- aligns the button to the bottom of the frame
+                    statusButton.BackgroundColor3 = Color3.new(1, 1, 1) -- white background
+                    statusButton.TextColor3 = Color3.new(0, 0, 0) -- black text
+                    statusButton.BackgroundTransparency = 0.5 -- semi-transparent
+                    statusButton.TextScaled = true -- enable text scaling for the button
+                     
+                    -- Function to create BillboardGui for a player with name and distance
+                    local function createBillboardGuiForPlayer(player, distance)
+                        local billboardGui = Instance.new("BillboardGui")
+                        billboardGui.Name = "PlayerBillboardGui"
+                        billboardGui.Adornee = player.Character.Head
+                        billboardGui.Size = UDim2.new(0, 100, 0, 50) -- fixed size for the BillboardGui
+                        billboardGui.StudsOffset = Vector3.new(0, 2, 0) -- adjust the vertical offset as needed
+                        billboardGui.AlwaysOnTop = true
+                        billboardGui.LightInfluence = 1
+                        billboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+                        billboardGui.Parent = player.Character.Head
+                     
+                        local textLabel = Instance.new("TextLabel")
+                        textLabel.Name = "PlayerNameLabel"
+                        textLabel.Text = player.Name .. "\nDistance: " .. math.floor(distance)
+                        textLabel.Size = UDim2.new(1, 0, 1, 0)
+                        textLabel.BackgroundTransparency = 1 -- transparent background
+                        textLabel.TextColor3 = Color3.new(1, 0, 0) -- red text for the player's name
+                        textLabel.TextScaled = true
+                        textLabel.TextStrokeColor3 = Color3.new(0, 0, 0) -- black text stroke
+                        textLabel.TextStrokeTransparency = 0 -- fully opaque text stroke (visible through walls)
+                        textLabel.Visible = statusButton.Text == "On" -- Hide the text if StatusButton is "Off"
+                        textLabel.Parent = billboardGui
+                    end
+                     
+                    -- Function to update player ESP distance
+                    local function updatePlayerESP()
+                        local localCharacter = game.Players.LocalPlayer.Character
+                        if not localCharacter then
+                            return
+                        end
+                     
+                        for _, player in ipairs(game.Players:GetPlayers()) do
+                            if player ~= game.Players.LocalPlayer and player.Character and player.Character:FindFirstChild("Head") then
+                                local distance = (localCharacter.Head.Position - player.Character.Head.Position).Magnitude
+                                local billboardGui = player.Character.Head:FindFirstChild("PlayerBillboardGui")
+                                if billboardGui then
+                                    billboardGui.PlayerNameLabel.Text = player.Name .. "\nDistance: " .. math.floor(distance)
+                                    billboardGui.PlayerNameLabel.TextColor3 = Color3.new(1, 0, 0) -- Set the text color to red
+                                    billboardGui.PlayerNameLabel.Visible = statusButton.Text == "On" -- Update visibility based on StatusButton
+                                else
+                                    createBillboardGuiForPlayer(player, distance)
+                                end
+                            end
+                        end
+                    end
+                     
+                    -- Call updatePlayerESP() initially and then schedule it to be called every 0.01 seconds
+                    updatePlayerESP()
+                    game:GetService("RunService").Heartbeat:Connect(function()
+                        updatePlayerESP()
+                    end)
+                     
+                    -- Now, you can add functionality to the button, for example:
+                    local function onButtonClicked()
+                        if statusButton.Text == "Off" then
+                            statusButton.Text = "On"
+                            -- Add code to enable the player ESP here
+                        else
+                            statusButton.Text = "Off"
+                            -- Add code to disable the player ESP here
+                            
+                            -- Remove BillboardGui for each player's head when disabling the ESP
+                            for _, player in ipairs(game.Players:GetPlayers()) do
+                                local billboardGui = player.Character and player.Character:FindFirstChild("Head") and player.Character.Head:FindFirstChild("PlayerBillboardGui")
+                                if billboardGui then
+                                    billboardGui:Destroy()
+                                end
+                            end
+                        end
+                        -- Update the visibility of BillboardGui elements after clicking the button
+                        for _, player in ipairs(game.Players:GetPlayers()) do
+                            local billboardGui = player.Character and player.Character:FindFirstChild("Head") and player.Character.Head:FindFirstChild("PlayerBillboardGui")
+                            if billboardGui then
+                                billboardGui.PlayerNameLabel.Visible = statusButton.Text == "On"
+                            end
+                        end
+                    end
+                     
+                    statusButton.MouseButton1Click:Connect(onButtonClicked)</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Redblock by phobos410 and collaborators.</p>
+    </div>
+
+</body>
+</html>

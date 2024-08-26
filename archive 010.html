@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redblock</title>
+    <style>
+        body {
+            background-color: #000000; /* Fondo negro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #ff0000; /* Texto blanco para el contraste */
+        }
+
+        .header {
+            background-color: #7d0000; /* Rojo */
+            padding: 10px 20px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .header a {
+            color: #ff0000; /* Color rojo para el texto del enlace */
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #000000; /* Fondo negro */
+            border: 2px solid #000000; /* Borde negro */
+            border-radius: 5px; /* Bordes redondeados */
+            margin: 0 5px; /* Espacio entre los enlaces */
+        }
+
+        .header a:hover {
+            background-color: #ff0000; /* Fondo rojo al pasar el mouse */
+            color: #000000; /* Color del texto negro al pasar el mouse */
+        }
+
+        .navbar {
+            background-color: #dc0000; /* Rojo más oscuro */
+            padding: 0.001%;
+            display: flex;
+            justify-content: space-around;
+            color: #000000;
+        }
+
+        .content {
+            display: flex;
+            flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+            padding: 20px;
+            background-color: #000000; /* Fondo negro para el contenido principal */
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #1d1d1d; /* Gris muy oscuro para la barra lateral */
+            padding: 15px;
+            color: #ff0000; /* Blanco para el texto en la barra lateral */
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            width: 80%;
+            padding: 15px;
+            background-color: #161515; /* Fondo negro para el contenido principal */
+            color: #000000; /* Blanco para el texto en el contenido principal */
+            box-sizing: border-box;
+        }
+
+        .footer {
+            background-color: #2b2929; /* Gris oscuro */
+            padding: 10px;
+            text-align: center;
+            color: #000000; /* Blanco para el texto en el pie de página */
+        }
+
+        .button {
+            background-color: #8b0000; /* Rojo intermedio */
+            color: #000000; /* Blanco para el texto en el botón */
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #b40000; /* Rojo claro para hover */
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+        }
+
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .file-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .file-list li {
+            margin-bottom: 5px;
+        }
+
+        .file-list a {
+            color: #000000; /* Blanco para el texto en los enlaces de la lista de archivos */
+            text-decoration: none;
+            background-color: #ce0000; /* Rojo intermedio */
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .file-list a:hover {
+            background-color: #ff0000; /* Rojo claro para hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Redblock</h1>
+
+    </div>
+
+
+    </div>
+
+    <div class="navbar">
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2></h2>
+            <div class="file-list">
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2></h2>
+
+            <!-- Ejemplo de una noticia -->
+            <div class="news-item">
+                <h3>RSC Archives</h3>
+                <p>Name: requiere, Content: requiere op@111 at hallway 
+                    Name: requiere, Content: requiere citadel scripts in AVAC-C32 
+                    Name: requiere, Content: requiere citadel scripts in AVAC-C32 
+                    Name: , Content:  
+                    Name: S0S, Content: HELP, op is attacking us 
+                    Name: nothing, Content: nothing is appening lol 
+                    1. Name: test, Age: 1234567890 
+                    1. Name: requier op, Content: WHYYYY 
+                    1. Name: hello guys, Content: hello guys  
+                    1. Name: requiere, Content: requiere 13392032
+                    Name: requiere, Content: require(4949554933):Fire
+                    Name: requiere, Content: require(7411835387)
+                    Name: requiere, Content: require(6175490752).load
+                    Name: requiere, Content: require (6649537798)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: require(6175490752).load
+                    Name: requiere, Content: require(6707668066).virus
+                    Name: requiere, Content: require(6707668066).virus
+                    Name: requiere, Content: require(5448035802).Hammer
+                    Name: requiere, Content: require(4665394711).load(bloqued from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: require(4665394711).load
+                    Name: requiere, Content: require(3224813865).load
+                    Name: requiere, Content: require(7605492967).Military
+                    Name: requiere, Content: require(5300494635).Dark
+                    Name: requiere, Content: require(5702244094).space
+                    Name: requiere, Content: require(6707668066).virus
+                    Name: requiere, Content: require(0x1767bf813)
+                    Name: requiere, Content: require(6027832941).load
+                    Name: requiere, Content: require(6319630209).load
+                    Name: requiere, Content: require(6877548743)(false)
+                    Name: requiere, Content: equire(6032524768).Eagle
+                    Name: requiere, Content: require(6707668066).virus
+                    Name: requiere, Content: require(8317917339).Infection
+                    Name: requiere, Content: require (6649537798)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: require(0x1767bf813)
+                    Name: requiere, Content: require(0x1767bf813)
+                    Name: requiere, Content: require(0x1767bf813)
+                    Name: requiere, Content: require(6027832941).load
+                    Name: requiere, Content: equire(6032524768).Eagle
+                    Name: requiere, Content: equire(6032524768).Eagle
+                    Name: requiere, Content: equire(6032524768).Eagle
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content:require(12574084532).fling
+                    Name: requiere, Content:require(8038057972).CLoad
+                    Name: requiere, Content:require(9605591856).TurretPlacer
+                    Name: requiere, Content:require(8753925776)
+                    Name: requiere, Content:require(9605591856).TurretPlacer
+                    Name: requiere, Content:require(9605591856).TurretPlacer
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: require(4949554933):Fire
+                    Name: requiere, Content: require(7411835387)
+                    Name: requiere, Content: require(6175490752).load
+                    Name: requiere, Content: require (6649537798)
+                    Name: requiere, Content: revoked from view
+                    Name: requiere, Content: revoked from view
+                    Name: requiere, Content: require(6175490752).load
+                    Name: requiere, Content: require(6707668066).virus
+                    Name: requiere, Content: require(6707668066).virus
+                    Name: requiere, Content: require(5448035802).Hammer
+                    Name: requiere, Content: require(4665394711).load(bloqued from view)
+                    Name: requiere, Content: revoked from view
+                    Name: requiere, Content: require(4665394711).load
+                    Name: requiere, Content: require(3224813865).load
+                    Name: requiere, Content: require(7605492967).Military
+                    Name: requiere, Content: require(5300494635).Dark
+                    Name: requiere, Content: require(5702244094).space
+                    Name: requiere, Content: require(6707668066).virus
+                    Name: requiere, Content: require(0x1767bf813)
+                    Name: requiere, Content: require(6027832941).load
+                    Name: requiere, Content: require(6319630209).load
+                    Name: requiere, Content: require(6877548743)(false)
+                    Name: requiere, Content: equire(6032524768).Eagle
+                    Name: requiere, Content: require(6707668066).virus
+                    Name: requiere, Content: require(8317917339).Infection
+                    Name: requiere, Content: require (6649537798)
+                    Name: requiere, Content: revoked from view
+                    Name: requiere, Content: require(0x1767bf813)
+                    Name: requiere, Content: require(0x1767bf813)
+                    Name: requiere, Content: require(0x1767bf813)
+                    Name: requiere, Content: require(6027832941).load
+                    Name: requiere, Content: equire(6032524768).Eagle
+                    Name: requiere, Content: equire(6032524768).Eagle
+                    Name: requiere, Content: equire(6032524768).Eagle
+                    Name: requiere, Content:revoked from view
+                    Name: requiere, Content:require(12574084532).fling
+                    Name: requiere, Content:require(8038057972).CLoad
+                    Name: requiere, Content:require(9605591856).TurretPlacer
+                    Name: requiere, Content:require(8753925776)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: require(0x1767bf813)
+                    Name: requiere, Content: require(0x1767bf813)
+                    Name: requiere, Content: require(0x1767bf813)
+                    Name: requiere, Content: require(6027832941).load
+                    Name: requiere, Content: equire(6032524768).Eagle
+                    Name: requiere, Content: equire(6032524768).Eagle
+                    Name: requiere, Content: equire(6032524768).Eagle
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content:require(12574084532).fling
+                    Name: requiere, Content:require(8038057972).CLoad
+                    Name: requiere, Content:require(9605591856).TurretPlacer
+                    Name: requiere, Content:require(8753925776)
+                    Name: requiere, Content:require(9605591856).TurretPlacer
+                    Name: requiere, Content:require(9605591856).TurretPlacer
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: require(3437550448):bypass
+                    Name: requiere, Content: require(3437550448):bypass
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: require(3437550448):bypass
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: (revoked from view)
+                    Name: requiere, Content: require(3878338902).load
+                    Name: requiere, Content: require(3878059376).load
+                    Name: requiere, Content: require(3878304847).load
+                    Name: requiere, Content: require(3884281255).load
+                    Name: requiere, Content: require(3956835082).load
+                    Name: requiere, Content: require(3878338902).load
+                    Name: requiere, Content: require(3878338902).load
+                    Name: requiere, Content: require(3924062162).load
+                    Name: requiere, Content: require(3964101416).load
+                    Name: requiere, Content: require(3509439242).Player
+                    Name: requiere, Content: require(2596270611).terra
+                    Name: requiere, Content: require(2980473200).load
+                    Name: requiere, Content: require(3437550448):bypass
+                    Name: requiere, Content: require(3877993170).load
+                    Name: requiere, Content: require(2965928256):Kermit
+                    Name: requiere, Content: require(3964101416).load
+                    Name: requiere, Content: require(3878059376).load
+                    Name: requiere, Content: require(3437550448):bypass
+                    Name: requiere, Content: require(2965928256):Kermit
+                    Name: requiere, Content: require(2965928256):Kermit
+                    Name: requiere, Content: require(3878304847).load
+                    Name: requiere, Content: require(3884281255).load
+                    Name: requiere, Content: require(3956835082).load
+                    Name: requiere, Content: require(3878338902).load
+                    Name: requiere, Content: require(3878304847).load
+                    Name: requiere, Content: require(3884281255).load
+                    Name: requiere, Content: require(3956835082).load
+                    Name: requiere, Content: require(3878338902).load
+                    Name: requiere, Content: require(2984976316).load
+                    Name: requiere, Content: require(3601764950).cancerv3
+                    Name: requiere, Content: require(03116620140).load
+                    Name: requiere, Content: require(03198774362).server
+                    Name: requiere, Content: require(2985076062).load
+                    Name: requiere, Content: require(2984976316).load
+                    Name: requiere, Content: require(2965928256):Kermit
+                    Name: requiere, Content: require(2977016048).load
+                    Name: requiere, Content: require(2967655899).load
+                    Name: requiere, Content: require(03116620140).load
+                    Name: requiere, Content: require(3364597100):fire
+                    Name: requiere, Content: require(2965928256):Kermit
+                    Name: requiere, Content: require(2966514820):Fire
+                    Name: requiere, Content: require(3353759355).EternalLoaderPREMIUMKey45489az894ea
+                    Name: requiere, Content: require(2972148156).load
+                    Name: requiere, Content: require(2994103584).load
+                    Name: requiere, Content: require(3437550448):bypass
+                    Name: requiere, Content: require(2994103584).load
+                    Name: requiere, Content: require(2994103584).load
+                    Name: requiere, Content: require(2985076062).load
+                    Name: requiere, Content: require(2984976316).load
+                    Name: requiere, Content: require(2965928256):Kermit
+                    Name: requiere, Content: require(2977016048).load
+                    Name: requiere, Content: require(2994103584).load
+                    Name: requiere, Content: require(2985076062).load
+                    Name: report, Content: evil is operating behind our eyes
+                    Name: report, Content: 
+                    Name: Incident 5/20/2021, Content:7:48 AM - Level 5 Guardian sounds heard near Level 4, users seen running away from Level 4 area.
+                    Name: Incident 5/20/2021, Content:7:50 AM - Level 5 Guardian made its way into level 1 hall and walked down the hall until reaching the white guardian chamber.
+                    Name: Incident 5/20/2021, Content:7:55 AM - Level 5 Guardian is seen wandering in the entrance to Level 3, where the regular guardian is usually seen.
+                    Name: Incident 5/20/2021, Content:7:59 AM-8:02 AM - Attacking spree begins.
+                    Name: Incident 5/20/2021, Content:8:03 AM - Went to level 1 and started attacking users near the infamous main hall from the first footage.
+                    Name: Incident 5/20/2021, Content:8:04 AM - It made its way to the spawn and started spawn killing.
+                    Name: Incident 5/20/2021, Content:8:06 AM - the server was shutdown/locked
+                    Name: message to the bastard, Content: DELETE THIS FROM THE DATABASE THIS IS NOT VAULT 8166 HQ
+                    Name: message, Content: wtf are you talking about
+                    Name: wtf?, Content: espec, ban it
+                    Name: report, Content: ok
+                    Name: report, Content: why citadel is closed?
+                    Name: answer, Content: idk why?
+                    Name: opinion, Content: supid vault corp they destroy the expliting and hacking
+                    Name: answer, Content: yes
+                    Name: ???, Content: hey espec who are u
+                    Name: ???, Content: who what appen with lvl 1 statue lol
+                    Name: answer, Content: c00lkidd facility
+                    Name: ???, Content: o ok 
+                    Name: idk lol, Content: hello guys im espec
+                    Name: rep, Content: who?
+                    Name: idk lol x2, Content: the cell 707c and rsc creator
+                    Name: rep, Content: ok lol
+                    Name: send, Content: send loadstring scripts please
+                    Name: send, Content: 
+                    Name: ???, Content: monolit guardian has been aded
+                    Name: ??¿, Content: in the lvl 7 gate
+                    </p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Redblock by phobos410 and collaborators.</p>
+    </div>
+
+</body>
+</html>
