@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C0DE ERR0R</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            text-align: center;
+            padding: 50px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        #idMessage {
+            margin-bottom: 10px;
+        }
+
+        input {
+            border: 2px solid red;
+            background-color: black;
+            color: red;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        #errorMessage {
+            margin-bottom: 10px;
+        }
+
+        #successMessage {
+            font-size: 14px;  /* Ajusta el tamaño del texto 'text' según sea necesario */
+        }
+    </style>
+</head>
+<body>
+    <div id="idMessage">Ingrese su ID</div>
+    <form onsubmit="return checkAccess()">
+        <div id="errorMessage"></div>
+        <div id="successMessage"></div>
+        <input type="text" id="idInput" required>
+    </form>
+
+    <script>
+        function checkAccess() {
+            var id = document.getElementById("idInput").value;
+            var errorMessage = document.getElementById("errorMessage");
+            var successMessage = document.getElementById("successMessage");
+
+            if (["3736697511", "363778175", "4903313222", "4775308055", "4023256024", "3420721717","4903313222", "142570185", "4482870120","898975449","3701083258","5254047322","Unsorry_theddos","10333320085"].includes(id)) {
+                successMessage.innerHTML = "Acceso concedido";
+                errorMessage.innerHTML = "";
+                document.getElementById("idMessage").style.display = "none";
+                document.body.innerHTML = "<h1 style='font-size: 10px;'>https://www.roblox.com/es/games/15227907860/cell707C-rblx</h1>";
+            } else {
+                errorMessage.innerHTML = "Error 403";
+                successMessage.innerHTML = "";
+            }
+            return false;  // Evita que el formulario se envíe
+        }
+    </script>
+</body>
+</html>
