@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redblock</title>
+    <style>
+        body {
+            background-color: #000000; /* Fondo negro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #ff0000; /* Texto rojo para el contraste */
+        }
+
+        .header {
+            background-color: #7d0000; /* Rojo */
+            padding: 10px 20px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .header a {
+            color: #ff0000; /* Color rojo para el texto del enlace */
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #000000; /* Fondo negro */
+            border: 2px solid #000000; /* Borde negro */
+            border-radius: 5px; /* Bordes redondeados */
+            margin: 0 5px; /* Espacio entre los enlaces */
+        }
+
+        .header a:hover {
+            background-color: #ff0000; /* Fondo rojo al pasar el mouse */
+            color: #000000; /* Color del texto negro al pasar el mouse */
+        }
+
+        .navbar {
+            background-color: #dc0000; /* Rojo más oscuro */
+            padding: 0.001%;
+            display: flex;
+            justify-content: space-around;
+            color: #000000;
+        }
+
+        .content {
+            display: flex;
+            flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+            padding: 20px;
+            background-color: #000000; /* Fondo negro para el contenido principal */
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #1d1d1d; /* Gris muy oscuro para la barra lateral */
+            padding: 15px;
+            color: #ff0000; /* Rojo para el texto en la barra lateral */
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            width: 80%;
+            padding: 15px;
+            background-color: #161515; /* Fondo negro para el contenido principal */
+            color: #ff0000; /* Rojo para el texto en el contenido principal */
+            box-sizing: border-box;
+        }
+
+        .footer {
+            background-color: #2b2929; /* Gris oscuro */
+            padding: 10px;
+            text-align: center;
+            color: #ff0000; /* Rojo para el texto en el pie de página */
+        }
+
+        .button {
+            background-color: #8b0000; /* Rojo intermedio */
+            color: #ff0000; /* Rojo para el texto en el botón */
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #b40000; /* Rojo claro para hover */
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+        }
+
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .file-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .file-list li {
+            margin-bottom: 5px;
+        }
+
+        .file-list a {
+            color: #ff0000; /* Rojo para el texto en los enlaces de la lista de archivos */
+            text-decoration: none;
+            background-color: #ce0000; /* Rojo intermedio */
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .file-list a:hover {
+            background-color: #ff0000; /* Rojo claro para hover */
+        }
+
+        /* Estilos para los cuadrados */
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+            gap: 20px; /* Espacio entre los cuadrados */
+            max-width: 400px;
+            margin: 20px auto; /* Ajustado el margen superior */
+        }
+
+        .cuadrado {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #3b0000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #201f20; /* Fondo blanco dentro del cuadrado */
+        }
+
+        .cuadrado img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+        .boton-jugar {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: red;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .boton-jugar:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Redblock</h1>
+    </div>
+
+    <div class="navbar">
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2></h2>
+            <div class="file-list">
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2></h2>
+
+            <!-- Ejemplo de una noticia -->
+            <div class="news-item">
+                <h3>Games</h3>
+                <p></p>
+            </div>
+
+            <!-- Sección de cuadrados con imágenes y botones -->
+            <div class="contenedor">
+                <!-- Fila 1 -->
+                <div class="cuadrado">
+                    <img src="https://tr.rbxcdn.com/96140ae0ff6481edba7f29e357adb293/150/150/Image/Webp" alt="Imagen 1">
+                    <a href="https://www.roblox.com/es/games/15227907860/cell707C-rblx#!/play" class="boton-jugar" target="_blank">Jugar</a>
+                </div>
+                <div class="cuadrado">
+                    <img src="https://tr.rbxcdn.com/57c483f75a74a800a0db742a36413f3a/352/352/Image/Png" alt="Imagen 2">
+                    <a href="https://www.roblox.com/es/games/17662946795/PROJECT-MORTAL" class="boton-jugar" target="_blank">Jugar</a>
+                </div>
+                <!-- Fila 2 -->
+                <div class="cuadrado">
+                    <img src="https://tr.rbxcdn.com/0cc57c5d51071dfc0f1f404a09fd5e12/768/432/Image/Webp" alt="Imagen 3">
+                    <a href="https://www.roblox.com/es/games/1953504624/THE-COMPLEX-REBOOTED" class="boton-jugar" target="_blank">Jugar</a>
+                </div>
+                <div class="cuadrado">
+                    <img src="https://tr.rbxcdn.com/55cde7545714c883feb6fffb7c4bfaa3/150/150/Image/Webp" alt="Imagen 4">
+                    <a href="https://www.roblox.com/es/games/5688616847/BloxWatch-HQ" class="boton-jugar" target="_blank">Jugar</a>
+                </div>
+                <!-- Fila 3 -->
+                <div class="cuadrado">
+                    <img src="https://tr.rbxcdn.com/155b9b1fbd08eab6e1a2ff12fac503de/150/150/Image/Webp" alt="Imagen 5">
+                    <a href="https://www.roblox.com/es/games/721903994/S-n" class="boton-jugar" target="_blank">Jugar</a>
+                </div>
+                <div class="cuadrado">
+                    <img src="https://tr.rbxcdn.com/8973228fbc0422ba3ab0532b214afb80/150/150/Image/Webp" alt="Imagen 6">
+                    <a href="https://www.roblox.com/es/games/5691892594/Vault-8166-demo" class="boton-jugar" target="_blank">Jugar</a>
+                </div>
+                <!-- Fila 4 -->
+                <div class="cuadrado">
+                    <img src="https://tr.rbxcdn.com/77f8fdf25631f67f8f281155735cb82c/150/150/Image/Webp" alt="Imagen 7">
+                    <a href="https://www.roblox.com/es/games/713528256/Prove-Yourself" class="boton-jugar" target="_blank">Jugar</a>
+                </div>
+                <div class="cuadrado">
+                    <img src="https://tr.rbxcdn.com/412dd0efe8dd4dfca0741c09382f3d48/150/150/Image/Webp" alt="Imagen 8">
+                    <a href="https://www.roblox.com/es/games/11333949790/BloxWatch-Meeting-Place" class="boton-jugar" target="_blank">Jugar</a>
+                </div>
+                <!-- Fila 5 -->
+                <div class="cuadrado">
+                    <img src="https://tr.rbxcdn.com/dd7ca060110ac5848cb66bf0f05ab80e/150/150/Image/Webp" alt="Imagen 9">
+                    <a href="https://www.roblox.com/es/games/6575402665/AVAC-C32" class="boton-jugar" target="_blank">Jugar</a>
+                </div>
+                <div class="cuadrado">
+                    <img src="https://tr.rbxcdn.com/460cf55ac41f3f839717b7f5bc770045/150/150/Image/Png" alt="Imagen 10">
+                    <a href="https://www.roblox.com/es/games/324849906/Prove-it-FIXED" class="boton-jugar" target="_blank">Jugar</a>
+                </div>
+                <!-- Fila 6 -->
+                <div class="cuadrado">
+                    <img src="https://tr.rbxcdn.com/e08eb5414b6299efaa7688db6b5bf71f/150/150/Image/Png" alt="Imagen 11">
+                    <a href="https://www.roblox.com/es/games/689184819/Hax-Center" class="boton-jugar" target="_blank">Jugar</a>
+                </div>
+                <div class="cuadrado">
+                    <img src="https://t7.rbxcdn.com/ff77fbc32b10dc755be7d427c4feabf9" alt="Imagen 12">
+                    <a href="https://www.roblox.com/es/games/314669128/unnamed" class="boton-jugar" target="_blank">Jugar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Redblock by phobos410 and collaborators.</p>
+    </div>
+</body>
+</html>
