@@ -17,30 +17,35 @@
         }
 
         .header {
-            background-color: #6e0000; /* Rojo */
-            padding: 10px 20px;
-            color: #ff0000; /* Blanco para el texto en el encabezado */
+            background-image: url('redblock.png'); /* Imagen de fondo */
+            background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+            background-position: center; /* Centra la imagen */
+            padding: 35px 1px;
             text-align: center;
+            color: #000000;
+        }
+
+        .header a {
+            color: #ff0000; /* Color rojo para el texto del enlace */
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #000000; /* Fondo negro */
+            border: 2px solid #000000; /* Borde negro */
+            border-radius: 5px; /* Bordes redondeados */
+            margin: 0 5px; /* Espacio entre los enlaces */
+        }
+
+        .header a:hover {
+            background-color: #ff0000; /* Fondo rojo al pasar el mouse */
+            color: #000000; /* Color del texto negro al pasar el mouse */
         }
 
         .navbar {
-            background-color: #7d0000; /* Rojo más oscuro */
-            padding: 10px;
+            background-color: #dc0000; /* Rojo más oscuro */
+            padding: 0.001%;
             display: flex;
             justify-content: space-around;
-
-        }
-
-        .navbar a {
-            color: #ff0000; /* Blanco para el texto en los enlaces */
-            text-decoration: none;
-            padding: 5px 15px;
-            background-color: #000000; /* Rojo intermedio */
-            border-radius: 5px;
-        }
-
-        .navbar a:hover {
-            background-color: #780000; /* Rojo claro para hover */
+            color: #000000;
         }
 
         .content {
@@ -127,10 +132,6 @@
 
     <div class="header">
         <h1>Redblock</h1>
-    </div>
-
-    <div class="navbar">
-       
         <a href="index.html">index page</a>
         <a href="archives.html">Archives</a>
         <a href="http://redspodofficial.wikidot.com/">RSC forums</a>
@@ -138,6 +139,10 @@
         <a href="send request.html">send request</a>
         <a href="games.html">games</a>
         <a href="chat.html">chat</a>
+    </div>
+
+    <div class="navbar">
+       
     </div>
 
     <div class="navbar">
@@ -149,7 +154,6 @@
             <div class="file-list">
                 <ul>
                     <li><a href="bulletin 1.html" target="_blank" rel="noopener">"26/8/24"</a></li>
-                    <li><a href="bulletin 2.html" target="_blank" rel="noopener">"website release"</a></li>
                 </ul>
             </div>
         </div>
