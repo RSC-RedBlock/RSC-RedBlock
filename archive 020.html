@@ -153,7 +153,13 @@
             <!-- Ejemplo de una noticia -->
             <div class="news-item">
                 <h3>RSC Archives</h3>
-                <p></p>
+                <p>local tool = game.ServerStorage.TOOLNAME -- Replace TOOLNAME with the exact name of the tool you want to be given
+
+                    script.Parent.ClickDetector.MouseClick:connect(function(player)
+                        local Backpack = player:WaitForChild("Backpack")
+                        tool:Clone().Parent = player.Backpack
+                        end
+                    end)</p>
             </div>
 
 

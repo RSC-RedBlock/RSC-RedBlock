@@ -153,7 +153,22 @@
             <!-- Ejemplo de una noticia -->
             <div class="news-item">
                 <h3>RSC Archives</h3>
-                <p></p>
+                <p>
+                    spawn(function()
+                        while wait(0.00000000000000000000000000000000000000000000000000000000000000000001) do
+                            for i, v in next, game:GetService("Players"):GetChildren() do
+                                pcall(function()
+                                    if v ~= game:GetService("Players").LocalPlayer and not v.Character:FindFirstChildOfClass("ForceField") and v.Character.Humanoid.Health > 0 then
+                                        for x, c in next, game:GetService("Players"):GetChildren() do
+                                            if c ~= game:GetService("Players").LocalPlayer then
+                                                game.ReplicatedStorage.meleeEvent:FireServer(c)
+                                            end
+                                        end
+                                    end
+                                end)
+                                wait()
+                            end
+                        end</p>
             </div>
 
 

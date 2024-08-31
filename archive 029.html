@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redblock</title>
+    <style>
+        body {
+            background-color: #000000; /* Fondo negro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #ff0000; /* Texto blanco para el contraste */
+        }
+
+        .header {
+            background-color: #7d0000; /* Rojo */
+            padding: 10px 20px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .header a {
+            color: #ff0000; /* Color rojo para el texto del enlace */
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #000000; /* Fondo negro */
+            border: 2px solid #000000; /* Borde negro */
+            border-radius: 5px; /* Bordes redondeados */
+            margin: 0 5px; /* Espacio entre los enlaces */
+        }
+
+        .header a:hover {
+            background-color: #ff0000; /* Fondo rojo al pasar el mouse */
+            color: #000000; /* Color del texto negro al pasar el mouse */
+        }
+
+        .navbar {
+            background-color: #dc0000; /* Rojo más oscuro */
+            padding: 0.001%;
+            display: flex;
+            justify-content: space-around;
+            color: #000000;
+        }
+
+        .content {
+            display: flex;
+            flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+            padding: 20px;
+            background-color: #000000; /* Fondo negro para el contenido principal */
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #1d1d1d; /* Gris muy oscuro para la barra lateral */
+            padding: 15px;
+            color: #ff0000; /* Blanco para el texto en la barra lateral */
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            width: 80%;
+            padding: 15px;
+            background-color: #161515; /* Fondo negro para el contenido principal */
+            color: #000000; /* Blanco para el texto en el contenido principal */
+            box-sizing: border-box;
+        }
+
+        .footer {
+            background-color: #2b2929; /* Gris oscuro */
+            padding: 10px;
+            text-align: center;
+            color: #000000; /* Blanco para el texto en el pie de página */
+        }
+
+        .button {
+            background-color: #8b0000; /* Rojo intermedio */
+            color: #000000; /* Blanco para el texto en el botón */
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #b40000; /* Rojo claro para hover */
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+        }
+
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .file-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .file-list li {
+            margin-bottom: 5px;
+        }
+
+        .file-list a {
+            color: #000000; /* Blanco para el texto en los enlaces de la lista de archivos */
+            text-decoration: none;
+            background-color: #ce0000; /* Rojo intermedio */
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .file-list a:hover {
+            background-color: #ff0000; /* Rojo claro para hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Redblock</h1>
+
+    </div>
+
+
+    </div>
+
+    <div class="navbar">
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2></h2>
+            <div class="file-list">
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2></h2>
+
+            <!-- Ejemplo de una noticia -->
+            <div class="news-item">
+                <h3>RSC Archives</h3>
+                <p>if game:GetService("CoreGui"):FindFirstChild("KAIOD") then
+                    game:GetService("CoreGui"):FindFirstChild("KAIOD"):Destroy()
+                _G.loopkill = false
+                end
+                local KAIOD = Instance.new("ScreenGui")
+                local Frame = Instance.new("ImageLabel")
+                local UIGradient = Instance.new("UIGradient")
+                local Kill = Instance.new("TextButton")
+                local Target = Instance.new("TextBox")
+                local Loop = Instance.new("TextButton")
+                local TextLabel = Instance.new("TextLabel")
+                local ImageLabel = Instance.new("ImageLabel")
+                local plr = game:GetService("Players").LocalPlayer
+                KAIOD.Name = "KAIOD"
+                KAIOD.Parent = game:GetService("CoreGui")
+                Frame.Name = "Frame"
+                Frame.Parent = KAIOD
+                Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                Frame.BackgroundTransparency = 1.000
+                Frame.Position = UDim2.new(0.0630208328, 0, 0.196662694, 0)
+                Frame.Size = UDim2.new(0, 237, 0, 352)
+                Frame.Image = "rbxassetid://3570695787"
+                Frame.ScaleType = Enum.ScaleType.Slice
+                Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+                Frame.SliceScale = 0.120
+                Frame.Active = true
+                Frame.Draggable = true
+                UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(20, 20, 20)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(25, 25, 25))}
+                UIGradient.Parent = Frame
+                Kill.Name = "Kill"
+                Kill.Parent = Frame
+                Kill.BackgroundColor3 = Color3.fromRGB(152, 0, 2)
+                Kill.Position = UDim2.new(0.278481007, 0, 0.529105186, 0)
+                Kill.Size = UDim2.new(0, 104, 0, 27)
+                Kill.Text = "Kill"
+                Kill.TextColor3 = Color3.fromRGB(161, 161, 161)
+                Kill.TextScaled = true
+                Kill.TextSize = 14.000
+                Kill.TextWrapped = true
+                Target.Name = "Target"
+                Target.Parent = Frame
+                Target.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+                Target.Position = UDim2.new(0.0759493634, 0, 0.355113626, 0)
+                Target.Size = UDim2.new(0, 200, 0, 45)
+                Target.Font = Enum.Font.SourceSans
+                Target.PlaceholderColor3 = Color3.fromRGB(218, 218, 218)
+                Target.PlaceholderText = "Target Name | DisplayName"
+                Target.Text = ""
+                Target.TextColor3 = Color3.fromRGB(218, 218, 218)
+                Target.TextSize = 19.000
+                Loop.Name = "Loop"
+                Loop.Parent = Frame
+                Loop.BackgroundColor3 = Color3.fromRGB(152, 0, 2)
+                Loop.Position = UDim2.new(0.278481007, 0, 0.662157595, 0)
+                Loop.Size = UDim2.new(0, 104, 0, 27)
+                Loop.Text = "Bring"
+                Loop.TextColor3 = Color3.fromRGB(161, 161, 161)
+                Loop.TextScaled = true
+                Loop.TextSize = 14.000
+                Loop.TextWrapped = true
+                TextLabel.Parent = Frame
+                TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                TextLabel.BackgroundTransparency = 1.000
+                TextLabel.Position = UDim2.new(0.0759493634, 0, 0.838068187, 0)
+                TextLabel.Size = UDim2.new(0, 200, 0, 50)
+                TextLabel.Font = Enum.Font.SourceSans
+                TextLabel.Text = "Note: Can do random\nor single"
+                TextLabel.TextColor3 = Color3.fromRGB(121, 121, 121)
+                TextLabel.TextSize = 21.000
+                TextLabel.TextWrapped = true
+                TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+                TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+                ImageLabel.Parent = Frame
+                ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                ImageLabel.BackgroundTransparency = 0.800
+                ImageLabel.Position = UDim2.new(0.295358658, 0, 0.0454545468, 0)
+                ImageLabel.Size = UDim2.new(0, 96, 0, 96)
+                ImageLabel.Image = ""
+                 
+                local Player = function(Ev)
+                if Ev == "" then
+                return nil
+                elseif Ev == "random" then
+                return game:GetService("Players"):GetPlayers()[math.random(1, #game:GetService("Players"):GetPlayers())]
+                else
+                for _, v in pairs(game:GetService("Players"):GetPlayers()) do
+                if v.Name:lower():sub(1, #Ev) == Ev:lower() or v.DisplayName:lower():sub(1, #Ev) == Ev then
+                return v
+                end
+                end
+                end
+                end
+                 
+                Target.Focused:Connect(function()
+                while Target:IsFocused() and wait() do
+                local User = Player(Target.Text)
+                if User ~= nil then
+                ImageLabel.Image = game:GetService("Players"):GetUserThumbnailAsync(User.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+                end
+                end
+                end)
+                 
+                Target.FocusLost:Connect(function()
+                while wait() do
+                if Target:IsFocused() then break end
+                if Target.Text ~= "random" then break end
+                ImageLabel.Image = game:GetService("Players"):GetUserThumbnailAsync(Player(Target.Text).UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+                end
+                end)
+                 
+                Kill.MouseButton1Click:Connect(function()
+                plr.Character.Humanoid:UnequipTools()
+                local Humanoid = plr.Character.Humanoid:Clone()
+                local Target = Player(Target.Text)
+                local Tool = plr.Backpack:FindFirstChildOfClass("Tool")
+                 
+                plr.Character.Animate.Disabled = true
+                plr.Character.Humanoid:Destroy()
+                Humanoid.Parent = plr.Character
+                Tool.Parent = plr.Character
+                    game.Players.LocalPlayer.Character.Humanoid:ChangeState(15)
+                firetouchinterest(Target.Character.HumanoidRootPart, Tool.Handle, 0);
+                end)
+                 
+                Loop.MouseButton1Click:Connect(function()
+                local Target = Player(Target.Text)
+                 
+                local NOW = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                game.Players.LocalPlayer.Character.Humanoid.Name = 1
+                local l = game.Players.LocalPlayer.Character["1"]:Clone()
+                l.Parent = game.Players.LocalPlayer.Character
+                l.Name = "Humanoid"
+                wait()
+                game.Players.LocalPlayer.Character["1"]:Destroy()
+                game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
+                game.Players.LocalPlayer.Character.Animate.Disabled = true
+                wait()
+                game.Players.LocalPlayer.Character.Animate.Disabled = false
+                game.Players.LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
+                for i,v in pairs(game:GetService'Players'.LocalPlayer.Backpack:GetChildren())do
+                game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+                end
+                local function tp(player,player2)
+                local char1,char2=player.Character,player2.Character
+                if char1 and char2 then
+                char1.HumanoidRootPart.CFrame = char2.HumanoidRootPart.CFrame
+                end
+                end
+                local function getout(player,player2)
+                local char1,char2=player.Character,player2.Character
+                if char1 and char2 then
+                char1:MoveTo(char2.Head.Position)
+                end
+                end
+                tp(game.Players[Target], game.Players.LocalPlayer)
+                wait()
+                tp(game.Players[Target], game.Players.LocalPlayer)
+                wait()
+                getout(game.Players.LocalPlayer, game.Players[Target])
+                wait()
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = NOW
+                end)</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Redblock by phobos410 and collaborators.</p>
+    </div>
+
+</body>
+</html>

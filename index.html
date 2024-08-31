@@ -1,49 +1,187 @@
 <!DOCTYPE html>
-<html>
-	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    	<title>GoodBlox: Maintenance</title> 
-        <style type="text/css"> 
-			.content {
-				width: 800px;
-				margin-top: 0px;
-				margin-bottom: 10px;
-				margin-right: auto;
-				margin-left: auto;
-				text-align: justify;
-			}
-        </style>
-    </head>
-    <body style="background:rgb(0,0,0); color:rgb(255, 0, 0);">
-        <div style="width:900px;margin:auto;"> <!-- background:#fff; -->
-            <img style="display:block;margin:auto;" src=""> 
-                <div class="content"> 
-                    <p style="text-align: center">&nbsp;</p>
-                    <p style="text-align: center">
-                        <img src="crashimage.png" id="ctl00_cphRoblox_imgRobloxTeam" alt="Offline"/>
-                    </p>
-                    <p style="text-align: center; font-size: 14px;font-family:sourcesans;letter-spacing: 0.2px;font-style: normal;">
-                        The site is currently offline for maintenance and upgrades. Please check back soon!
-                    </p> we are upgrating or fixing the site, the site is down for now please wait for it
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <p>
-                    </p>
-                </div>
-                <br /><br />
-                <div style="font: normal 7pt/normal Verdana, sans-serif;text-align:center;">
-					<div id="Footer">
-						<hr>
-						
-					</div>
-				</div>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redblock</title>
+    <style>
+        body {
+            background-color: #000000; /* Fondo negro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #ff0000; /* Texto blanco para el contraste */
+        }
+
+        .header {
+            background-image: url('redblock.png'); /* Imagen de fondo */
+            background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+            background-position: center; /* Centra la imagen */
+            padding: 35px 1px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .header a {
+            color: #ff0000; /* Color rojo para el texto del enlace */
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #000000; /* Fondo negro */
+            border: 2px solid #000000; /* Borde negro */
+            border-radius: 5px; /* Bordes redondeados */
+            margin: 0 5px; /* Espacio entre los enlaces */
+        }
+
+        .header a:hover {
+            background-color: #ff0000; /* Fondo rojo al pasar el mouse */
+            color: #000000; /* Color del texto negro al pasar el mouse */
+        }
+
+        .navbar {
+            background-color: #dc0000; /* Rojo más oscuro */
+            padding: 0.001%;
+            display: flex;
+            justify-content: space-around;
+            color: #000000;
+        }
+
+        .content {
+            display: flex;
+            flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+            padding: 20px;
+            background-color: #000000; /* Fondo negro para el contenido principal */
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #1d1d1d; /* Gris muy oscuro para la barra lateral */
+            padding: 15px;
+            color: #ff0000; /* Blanco para el texto en la barra lateral */
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            width: 80%;
+            padding: 15px;
+            background-color: #161515; /* Fondo negro para el contenido principal */
+            color: #000000; /* Blanco para el texto en el contenido principal */
+            box-sizing: border-box;
+        }
+
+        .footer {
+            background-color: #2b2929; /* Gris oscuro */
+            padding: 10px;
+            text-align: center;
+            color: #000000; /* Blanco para el texto en el pie de página */
+        }
+
+        .button {
+            background-color: #8b0000; /* Rojo intermedio */
+            color: #000000; /* Blanco para el texto en el botón */
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #b40000; /* Rojo claro para hover */
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+        }
+
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .file-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .file-list li {
+            margin-bottom: 5px;
+        }
+
+        .file-list a {
+            color: #000000; /* Blanco para el texto en los enlaces de la lista de archivos */
+            text-decoration: none;
+            background-color: #ce0000; /* Rojo intermedio */
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .file-list a:hover {
+            background-color: #ff0000; /* Rojo claro para hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Redblock</h1>
+        <a href="index.html">index page</a>
+        <a href="archives.html">Archives</a>
+        <a href="http://redspodofficial.wikidot.com/">RSC forums</a>
+        <a href="bulletin board.html">bulletin board</a>
+        <a href="send request.html">send request</a>
+        <a href="games.html">games</a>
+        <a href="chat.html">chat</a>
+    </div>
+
+    <div class="navbar">
+        <p>redblock backs</p>
+    </div>
+
+    <div class="navbar">
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2>archives list</h2>
+            <div class="file-list">
+                <ul>
+                    <li><a href="C0DE ERR0R 001.html" target="_blank" rel="noopener">RSC-001</a></li>
+                    <li><a href="C0DE ERR0R 002.html" target="_blank" rel="noopener">RSC-002</a></li>
+                    <li><a href="C0DE ERR0R 003.html" target="_blank" rel="noopener">RSC-003</a></li>
+                    <li><a href="C0DE ERR0R 004.html" target="_blank" rel="noopener">RSC-004</a></li>
+                    <li><a href="C0DE ERR0R 005.html" target="_blank" rel="noopener">RSC-005</a></li>
+                    <li><a href="C0DE ERR0R 006.html" target="_blank" rel="noopener">RSC-006</a></li>
+                    <li><a href="C0DE ERR0R 007.html" target="_blank" rel="noopener">RSC-007</a></li>
+                    <li><a href="C0DE ERR0R 008.html" target="_blank" rel="noopener">RSC-008</a></li>
+                    <li><a href="C0DE ERR0R 009.html" target="_blank" rel="noopener">RSC-009</a></li>
+                    <li><a href="C0DE ERR0R 010.html" target="_blank" rel="noopener">RSC-010</a></li>
+                    <li><a href="http://redspodofficial.wikidot.com/" target="_blank" rel="noopener">RCS forums</a></li>
+                </ul>
+            </div>
         </div>
-        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
-			window.window.setTimeout("window.location = \'../\'", 86400000);
-        </script>
-    </body>
+        <div class="main-content">
+            <h2></h2>
+
+            <!-- Ejemplo de una noticia -->
+            <div class="news-item">
+                <h3>RSC bulleting board </h3>
+                <a data-flickr-embed="true" href="join now.png" title="join now"><img src="join now.png" width="640" height="334" alt="Captura de pantalla 2024-08-25 215105"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                <p>welcome to the cell7.. i say welcome to the RSC here you will found very usefull information.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Redblock by phobos410 and collaborators.</p>
+    </div>
+
+</body>
 </html>

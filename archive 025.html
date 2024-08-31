@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redblock</title>
+    <style>
+        body {
+            background-color: #000000; /* Fondo negro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #ff0000; /* Texto blanco para el contraste */
+        }
+
+        .header {
+            background-color: #7d0000; /* Rojo */
+            padding: 10px 20px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .header a {
+            color: #ff0000; /* Color rojo para el texto del enlace */
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #000000; /* Fondo negro */
+            border: 2px solid #000000; /* Borde negro */
+            border-radius: 5px; /* Bordes redondeados */
+            margin: 0 5px; /* Espacio entre los enlaces */
+        }
+
+        .header a:hover {
+            background-color: #ff0000; /* Fondo rojo al pasar el mouse */
+            color: #000000; /* Color del texto negro al pasar el mouse */
+        }
+
+        .navbar {
+            background-color: #dc0000; /* Rojo más oscuro */
+            padding: 0.001%;
+            display: flex;
+            justify-content: space-around;
+            color: #000000;
+        }
+
+        .content {
+            display: flex;
+            flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+            padding: 20px;
+            background-color: #000000; /* Fondo negro para el contenido principal */
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #1d1d1d; /* Gris muy oscuro para la barra lateral */
+            padding: 15px;
+            color: #ff0000; /* Blanco para el texto en la barra lateral */
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            width: 80%;
+            padding: 15px;
+            background-color: #161515; /* Fondo negro para el contenido principal */
+            color: #000000; /* Blanco para el texto en el contenido principal */
+            box-sizing: border-box;
+        }
+
+        .footer {
+            background-color: #2b2929; /* Gris oscuro */
+            padding: 10px;
+            text-align: center;
+            color: #000000; /* Blanco para el texto en el pie de página */
+        }
+
+        .button {
+            background-color: #8b0000; /* Rojo intermedio */
+            color: #000000; /* Blanco para el texto en el botón */
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #b40000; /* Rojo claro para hover */
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+        }
+
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .file-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .file-list li {
+            margin-bottom: 5px;
+        }
+
+        .file-list a {
+            color: #000000; /* Blanco para el texto en los enlaces de la lista de archivos */
+            text-decoration: none;
+            background-color: #ce0000; /* Rojo intermedio */
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .file-list a:hover {
+            background-color: #ff0000; /* Rojo claro para hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Redblock</h1>
+
+    </div>
+
+
+    </div>
+
+    <div class="navbar">
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2></h2>
+            <div class="file-list">
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2></h2>
+
+            <!-- Ejemplo de una noticia -->
+            <div class="news-item">
+                <h3>RSC Archives</h3>
+                <p>local ScreenGui = Instance.new("ScreenGui")
+                    local Frame = Instance.new("Frame")
+                    local TextButton = Instance.new("TextButton")
+                    local TextButton_2 = Instance.new("TextButton")
+                     
+                    --Properties:
+                     
+                    ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+                    ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+                     
+                    Frame.Parent = ScreenGui
+                    Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+                    Frame.Position = UDim2.new(0, 0, 0.371191144, 0)
+                    Frame.Size = UDim2.new(0, 100, 0, 100)
+                     
+                    TextButton.Parent = Frame
+                    TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+                    TextButton.Size = UDim2.new(0, 200, 0, 100)
+                    TextButton.Font = Enum.Font.SourceSans
+                    TextButton.Text = "Invisible"
+                    TextButton.TextColor3 = Color3.new(0, 0, 0)
+                    TextButton.TextScaled = true
+                    TextButton.TextSize = 14
+                    TextButton.TextWrapped = true
+                     
+                    TextButton_2.Parent = Frame
+                    TextButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+                    TextButton_2.Position = UDim2.new(0, 0, 1, 0)
+                    TextButton_2.Size = UDim2.new(0, 200, 0, 100)
+                    TextButton_2.Font = Enum.Font.SourceSans
+                    TextButton_2.Text = "visible"
+                    TextButton_2.TextColor3 = Color3.new(0, 0, 0)
+                    TextButton_2.TextScaled = true
+                    TextButton_2.TextSize = 14
+                    TextButton_2.TextWrapped = true
+                     
+                    -- Scripts:
+                     
+                    local function GMMEW_fake_script() -- TextButton.LocalScript 
+                        local script = Instance.new('LocalScript', TextButton)
+                     
+                        script.Parent.MouseButton1Click:Connect(function()
+                            local plr = game.Players.LocalPlayer.Character 
+                             local d = plr:GetChildren() 
+                             for i=1, #d do 
+                              if (d[i].className == "Accessory") then 
+                               d[i].Handle.Transparency = 1
+                              end 
+                            end
+                                if plr.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+                                    plr.LeftUpperLeg.Transparency = 1
+                                    plr.LeftLowerLeg.Transparency = 1
+                                    plr.LeftFoot.Transparency = 1
+                                    plr.RightUpperLeg.Transparency = 1
+                                    plr.RightLowerLeg.Transparency = 1
+                                    plr.RightFoot.Transparency = 1
+                                    plr.RightUpperArm.Transparency = 1
+                                    plr.RightLowerArm.Transparency = 1
+                                    plr.RightHand.Transparency = 1
+                                    plr.LeftUpperArm.Transparency = 1
+                                    plr.LeftLowerArm.Transparency = 1
+                                    plr.LeftHand.Transparency = 1
+                                    plr.UpperTorso.Transparency = 1
+                                    plr.LowerTorso.Transparency = 1
+                                    plr.Head.Transparency = 1
+                                    plr.Head.face.Transparency = 1
+                                else
+                                    if plr.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+                                    plr.LeftLeg.Transparency = 1
+                                    plr.RightLeg.Transparency = 1
+                                    plr.RightArm.Transparency = 1
+                                    plr.LeftArm.Transparency = 1
+                                    plr.Torso.Transparency = 1
+                                    plr.Head.Transparency = 1
+                                    plr.Head.face.Transparency = 1
+                                end
+                            end
+                        end)
+                    end
+                    coroutine.wrap(GMMEW_fake_script)()
+                    local function RUOI_fake_script() -- TextButton_2.LocalScript 
+                        local script = Instance.new('LocalScript', TextButton_2)
+                     
+                        script.Parent.MouseButton1Click:Connect(function()
+                            local plr = game.Players.LocalPlayer.Character 
+                             local d = plr:GetChildren() 
+                             for i=1, #d do 
+                              if (d[i].className == "Accessory") then 
+                               d[i].Handle.Transparency = 0
+                              end 
+                            end
+                                if plr.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+                                    plr.LeftUpperLeg.Transparency = 0
+                                    plr.LeftLowerLeg.Transparency = 0
+                                    plr.LeftFoot.Transparency = 0
+                                    plr.RightUpperLeg.Transparency = 0
+                                    plr.RightLowerLeg.Transparency = 0
+                                    plr.RightFoot.Transparency = 0
+                                    plr.RightUpperArm.Transparency = 0
+                                    plr.RightLowerArm.Transparency = 0
+                                    plr.RightHand.Transparency = 0
+                                    plr.LeftUpperArm.Transparency = 0
+                                    plr.LeftLowerArm.Transparency = 0
+                                    plr.LeftHand.Transparency = 0
+                                    plr.UpperTorso.Transparency = 0
+                                    plr.LowerTorso.Transparency = 0
+                                    plr.Head.Transparency = 0
+                                    plr.Head.face.Transparency = 0
+                                else
+                                    if plr.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+                                    plr.LeftLeg.Transparency = 0
+                                    plr.RightLeg.Transparency = 0
+                                    plr.RightArm.Transparency = 0
+                                    plr.LeftArm.Transparency = 0
+                                    plr.Torso.Transparency = 0
+                                    plr.Head.Transparency = 0
+                                    plr.Head.face.Transparency = 0
+                                end
+                            end
+                        end)
+                    end</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Redblock by phobos410 and collaborators.</p>
+    </div>
+
+</body>
+</html>

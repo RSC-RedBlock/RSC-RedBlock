@@ -153,7 +153,15 @@
             <!-- Ejemplo de una noticia -->
             <div class="news-item">
                 <h3>RSC Archives</h3>
-                <p></p>
+                <p>spawn(function()
+                    while true do
+                        wait(1) -- Espera un segundo antes de restaurar la vida
+                        local localPlayer = game:GetService("Players").LocalPlayer
+                        if localPlayer.Character and localPlayer.Character:FindFirstChild("Humanoid") then
+                            localPlayer.Character.Humanoid.Health = localPlayer.Character.Humanoid.Health + 9999 
+                        end
+                    end
+                end)</p>
             </div>
 
 
